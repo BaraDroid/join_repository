@@ -6,6 +6,8 @@ import { initializeApp, provideFirebaseApp } from '@angular/fire/app';
 import { getAuth, provideAuth } from '@angular/fire/auth';
 import { getFirestore, provideFirestore } from '@angular/fire/firestore';
 
+//comment for testing the right github connection
+
 /**
  * Configuration for the Angular application, including various providers for routing, Firebase services, and client-side hydration.
  *
@@ -71,6 +73,6 @@ export const appConfig: ApplicationConfig = {
      * 
      * @see {@link getFirestore} for Firebase Firestore methods.
      */
-    provideFirestore(() => getFirestore()), provideFirebaseApp(() => initializeApp({ projectId: "join-77ccf", appId: "1:742793083923:web:34265575198c48ac3053e6", storageBucket: "join-77ccf.firebasestorage.app", apiKey: "AIzaSyAaPMKgXvIfY-aUFNYhyIWXWdZkmTk3coU", authDomain: "join-77ccf.firebaseapp.com", messagingSenderId: "742793083923" })), provideAuth(() => getAuth()), provideFirestore(() => getFirestore())
+    provideFirestore(() => getFirestore()), provideFirebaseApp(() => initializeApp({ projectId: "join-77ccf", appId: "1:742793083923:web:34265575198c48ac3053e6", storageBucket: "join-77ccf.firebasestorage.app", apiKey: "AIzaSyAaPMKgXvIfY-aUFNYhyIWXWdZkmTk3coU", authDomain: "join-77ccf.firebaseapp.com", messagingSenderId: "742793083923" })), provideAuth(() => getAuth()), provideFirestore(() => getFirestore()), provideFirebaseApp(() => initializeApp({ projectId: "join-64d68", appId: "1:1011040682800:web:caaf1a77ff1027816d7ef5", storageBucket: "join-64d68.firebasestorage.app", apiKey: "AIzaSyDoF5QmVmCD4wdFmefpvF8tPU8myeK2XFk", authDomain: "join-64d68.firebaseapp.com", messagingSenderId: "1011040682800" })), provideAuth(() => getAuth()), provideFirestore(() => getFirestore())
   ]
 };
