@@ -53,12 +53,12 @@ export const appConfig: ApplicationConfig = {
      * @param {string} config.messagingSenderId - Firebase messaging sender ID.
      */
     provideFirebaseApp(() => initializeApp({
-      projectId: "join-52e31",
-      appId: "1:290584592371:web:a52999eaaabf744119dc86",
-      storageBucket: "join-52e31.firebasestorage.app",
-      apiKey: "AIzaSyCQy7vwff4IXLJGmuVv8k_hgDdYTTx2tpE",
-      authDomain: "join-52e31.firebaseapp.com",
-      messagingSenderId: "290584592371"
+      apiKey: "AIzaSyDoF5QmVmCD4wdFmefpvF8tPU8myeK2XFk",
+      authDomain: "join-64d68.firebaseapp.com",
+      projectId: "join-64d68",
+      storageBucket: "join-64d68.firebasestorage.app",
+      messagingSenderId: "1011040682800",
+      appId: "1:1011040682800:web:caaf1a77ff1027816d7ef5"
     })),
 
     /**
@@ -73,6 +73,11 @@ export const appConfig: ApplicationConfig = {
      * 
      * @see {@link getFirestore} for Firebase Firestore methods.
      */
-    provideFirestore(() => getFirestore()), provideFirebaseApp(() => initializeApp({ projectId: "join-77ccf", appId: "1:742793083923:web:34265575198c48ac3053e6", storageBucket: "join-77ccf.firebasestorage.app", apiKey: "AIzaSyAaPMKgXvIfY-aUFNYhyIWXWdZkmTk3coU", authDomain: "join-77ccf.firebaseapp.com", messagingSenderId: "742793083923" })), provideAuth(() => getAuth()), provideFirestore(() => getFirestore()), provideFirebaseApp(() => initializeApp({ projectId: "join-64d68", appId: "1:1011040682800:web:caaf1a77ff1027816d7ef5", storageBucket: "join-64d68.firebasestorage.app", apiKey: "AIzaSyDoF5QmVmCD4wdFmefpvF8tPU8myeK2XFk", authDomain: "join-64d68.firebaseapp.com", messagingSenderId: "1011040682800" })), provideAuth(() => getAuth()), provideFirestore(() => getFirestore())
+    provideFirestore(() => getFirestore()), provideFirebaseApp(() => initializeApp({   apiKey: "AIzaSyDoF5QmVmCD4wdFmefpvF8tPU8myeK2XFk",
+      authDomain: "join-64d68.firebaseapp.com",
+      projectId: "join-64d68",
+      storageBucket: "join-64d68.firebasestorage.app",
+      messagingSenderId: "1011040682800",
+      appId: "1:1011040682800:web:caaf1a77ff1027816d7ef5"})), provideAuth(() => getAuth()), provideFirestore(() => getFirestore()), provideFirebaseApp(() => initializeApp({ projectId: "join-64d68", appId: "1:1011040682800:web:caaf1a77ff1027816d7ef5", storageBucket: "join-64d68.firebasestorage.app", apiKey: "AIzaSyDoF5QmVmCD4wdFmefpvF8tPU8myeK2XFk", authDomain: "join-64d68.firebaseapp.com", messagingSenderId: "1011040682800" })), provideAuth(() => getAuth()), provideFirestore(() => getFirestore())
   ]
 };
