@@ -53,12 +53,8 @@ export const appConfig: ApplicationConfig = {
      * @param {string} config.messagingSenderId - Firebase messaging sender ID.
      */
     provideFirebaseApp(() => initializeApp({
-      apiKey: "AIzaSyDoF5QmVmCD4wdFmefpvF8tPU8myeK2XFk",
-      authDomain: "join-64d68.firebaseapp.com",
-      projectId: "join-64d68",
-      storageBucket: "join-64d68.firebasestorage.app",
-      messagingSenderId: "1011040682800",
-      appId: "1:1011040682800:web:caaf1a77ff1027816d7ef5"
+      //here comes the new apiKey and other data
+      
     })),
 
     /**
@@ -74,11 +70,8 @@ export const appConfig: ApplicationConfig = {
      * @see {@link getFirestore} for Firebase Firestore methods.
      */
     provideFirestore(() => getFirestore()), provideFirebaseApp(() => initializeApp({   apiKey: "AIzaSyDoF5QmVmCD4wdFmefpvF8tPU8myeK2XFk",
-      authDomain: "join-64d68.firebaseapp.com",
-      projectId: "join-64d68",
-      storageBucket: "join-64d68.firebasestorage.app",
-      messagingSenderId: "1011040682800",
-      appId: "1:1011040682800:web:caaf1a77ff1027816d7ef5"})), provideAuth(() => getAuth()), provideFirestore(() => getFirestore()), provideFirebaseApp(() => initializeApp({ projectId: "join-64d68", appId: "1:1011040682800:web:caaf1a77ff1027816d7ef5", storageBucket: "join-64d68.firebasestorage.app", apiKey: "AIzaSyDoF5QmVmCD4wdFmefpvF8tPU8myeK2XFk", authDomain: "join-64d68.firebaseapp.com", messagingSenderId: "1011040682800" })), provideAuth(() => getAuth()), provideFirestore(() => getFirestore())
+      //here comes the new ApiKey and other data
+      })), provideAuth(() => getAuth()), provideFirestore(() => getFirestore()), provideFirebaseApp(() => initializeApp({ projectId: "join-64d68", appId: "1:1011040682800:web:caaf1a77ff1027816d7ef5", storageBucket: "join-64d68.firebasestorage.app", apiKey: "AIzaSyDoF5QmVmCD4wdFmefpvF8tPU8myeK2XFk", authDomain: "join-64d68.firebaseapp.com", messagingSenderId: "1011040682800" })), provideAuth(() => getAuth()), provideFirestore(() => getFirestore())
   ]
 };
 
