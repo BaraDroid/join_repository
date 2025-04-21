@@ -54,7 +54,12 @@ export const appConfig: ApplicationConfig = {
      */
     provideFirebaseApp(() => initializeApp({
       //here comes the new apiKey and other data
-      
+      apiKey: "AIzaSyCU7YRehpMCQwRBHoYe49_PmZ27_ahGEAE",
+      authDomain: "join-c20f1.firebaseapp.com",
+      projectId: "join-c20f1",
+      storageBucket: "join-c20f1.firebasestorage.app",
+      messagingSenderId: "986387326842",
+      appId: "1:986387326842:web:e0d35b99234a7d186c18c3"
     })),
 
     /**
@@ -69,9 +74,15 @@ export const appConfig: ApplicationConfig = {
      * 
      * @see {@link getFirestore} for Firebase Firestore methods.
      */
-    provideFirestore(() => getFirestore()), provideFirebaseApp(() => initializeApp({   apiKey: "AIzaSyDoF5QmVmCD4wdFmefpvF8tPU8myeK2XFk",
+    provideFirestore(() => getFirestore()), provideFirebaseApp(() => initializeApp({
       //here comes the new ApiKey and other data
-      })), provideAuth(() => getAuth()), provideFirestore(() => getFirestore()), provideFirebaseApp(() => initializeApp({ projectId: "join-64d68", appId: "1:1011040682800:web:caaf1a77ff1027816d7ef5", storageBucket: "join-64d68.firebasestorage.app", apiKey: "AIzaSyDoF5QmVmCD4wdFmefpvF8tPU8myeK2XFk", authDomain: "join-64d68.firebaseapp.com", messagingSenderId: "1011040682800" })), provideAuth(() => getAuth()), provideFirestore(() => getFirestore())
+      apiKey: "AIzaSyCU7YRehpMCQwRBHoYe49_PmZ27_ahGEAE",
+  authDomain: "join-c20f1.firebaseapp.com",
+  projectId: "join-c20f1",
+  storageBucket: "join-c20f1.firebasestorage.app",
+  messagingSenderId: "986387326842",
+  appId: "1:986387326842:web:e0d35b99234a7d186c18c3"
+    })), provideAuth(() => getAuth()), provideFirestore(() => getFirestore()), provideFirebaseApp(() => initializeApp({ projectId: "join-64d68", appId: "1:1011040682800:web:caaf1a77ff1027816d7ef5", storageBucket: "join-64d68.firebasestorage.app", apiKey: "AIzaSyDoF5QmVmCD4wdFmefpvF8tPU8myeK2XFk", authDomain: "join-64d68.firebaseapp.com", messagingSenderId: "1011040682800" })), provideAuth(() => getAuth()), provideFirestore(() => getFirestore()), provideFirebaseApp(() => initializeApp({ projectId: "join-c20f1", appId: "1:986387326842:web:e0d35b99234a7d186c18c3", storageBucket: "join-c20f1.firebasestorage.app", apiKey: "AIzaSyCU7YRehpMCQwRBHoYe49_PmZ27_ahGEAE", authDomain: "join-c20f1.firebaseapp.com", messagingSenderId: "986387326842" })), provideAuth(() => getAuth()), provideFirestore(() => getFirestore())
   ]
 };
 
