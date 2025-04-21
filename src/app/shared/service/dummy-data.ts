@@ -37,70 +37,70 @@ export const dummyData: { firstname: string; lastname: string; email: string; ph
     {
         firstname: "Lena",
         lastname: "Schmidt",
-        email: "lena.schmidt82@gmail.com",
+        email: "bwl-foryou@gmail.com",
         phone: "+49 1521 1234567",
         color: avatarColor[Math.floor(Math.random() * avatarColor.length)]
     },
     {
         firstname: "Markus",
         lastname: "Sturmfels",
-        email: "mark.thunderrock@gmail.com",
+        email: "mark.usturmfels@gmail.com",
         phone: "+49 171 2345678",
         color: avatarColor[Math.floor(Math.random() * avatarColor.length)]
     },
     {
         firstname: "Julia",
         lastname: "Weber",
-        email: "julia.weber33@gmail.com",
+        email: "moshi.tansania@gmail.com",
         phone: "+49 160 3456789",
         color: avatarColor[Math.floor(Math.random() * avatarColor.length)]
     },
     {
         firstname: "Thomas",
         lastname: "Eisenherz",
-        email: "tom.ironheart@gmail.com",
+        email: "hal.foster@gmail.com",
         phone: "+49 176 4567890",
         color: avatarColor[Math.floor(Math.random() * avatarColor.length)]
     },
     {
         firstname: "Sophie",
         lastname: "Bauer",
-        email: "sophie.bauer19@gmail.com",
+        email: "sophie.bauer91@gmail.com",
         phone: "+49 151 5678901",
         color: avatarColor[Math.floor(Math.random() * avatarColor.length)]
     },
     {
         firstname: "Felix",
-        lastname: "Sturmkind",
-        email: "felix.stormchild@gmail.com",
+        lastname: "Slavitschek",
+        email: "felix.slavi@gmail.com",
         phone: "+49 159 6789012",
         color: avatarColor[Math.floor(Math.random() * avatarColor.length)]
     },
     {
         firstname: "Anna",
         lastname: "Keller",
-        email: "anna.keller88@gmail.com",
+        email: "anna.keller1879@gmail.com",
         phone: "+49 172 7890123",
         color: avatarColor[Math.floor(Math.random() * avatarColor.length)]
     },
     {
         firstname: "Michael",
         lastname: "Schattenwald",
-        email: "mike.shadowwood@gmail.com",
+        email: "mike.inthewoods@gmail.com",
         phone: "+49 175 8901234",
         color: avatarColor[Math.floor(Math.random() * avatarColor.length)]
     },
     {
         firstname: "Laura",
         lastname: "Fischer",
-        email: "laura.fischer77@gmail.com",
+        email: "laura.fischt98@gmail.com",
         phone: "+49 157 9012345",
         color: avatarColor[Math.floor(Math.random() * avatarColor.length)]
     },
     {
-        firstname: "Stefan",
-        lastname: "Morgentau",
-        email: "stefan.dewlight@gmail.com",
+        firstname: "Christian",
+        lastname: "Morgenstern",
+        email: "anto-logie@gmail.com",
         phone: "+49 162 0123456",
         color: avatarColor[Math.floor(Math.random() * avatarColor.length)]
         }
