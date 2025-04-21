@@ -81,3 +81,5 @@ export const appConfig: ApplicationConfig = {
       appId: "1:1011040682800:web:caaf1a77ff1027816d7ef5"})), provideAuth(() => getAuth()), provideFirestore(() => getFirestore()), provideFirebaseApp(() => initializeApp({ projectId: "join-64d68", appId: "1:1011040682800:web:caaf1a77ff1027816d7ef5", storageBucket: "join-64d68.firebasestorage.app", apiKey: "AIzaSyDoF5QmVmCD4wdFmefpvF8tPU8myeK2XFk", authDomain: "join-64d68.firebaseapp.com", messagingSenderId: "1011040682800" })), provideAuth(() => getAuth()), provideFirestore(() => getFirestore())
   ]
 };
+
+//test commit
