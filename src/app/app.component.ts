@@ -8,7 +8,7 @@ import { FirebaseService } from './shared/service/firebase.service';
 import { SharedComponent } from "./shared/shared.component";
 import { LogInComponent } from './log-in/log-in.component';
 import { SignUpComponent } from "./sign-up/sign-up.component";
-import { Auth, onAuthStateChanged, signOut } from '@angular/fire/auth';
+import { Auth, onAuthStateChanged, signOut, User } from '@angular/fire/auth';
 import { CommonModule, isPlatformBrowser } from '@angular/common';
 
 @Component({
@@ -69,13 +69,18 @@ export class AppComponent implements OnInit{
 
   ngOnInit() {
     if (isPlatformBrowser(this.platformId)) {
-      onAuthStateChanged(this.auth, (user) => {
+      //onAuthStateChanged(this.auth, (user: any) => {
+        onAuthStateChanged(this.auth, (user: User | null) => {
+      if(user) {
         this.isLoggedIn = !!user;
         this.isLoading = false;
 
         if (this.isLoggedIn && this.router.url === '/') {
           this.router.navigate(['/summary']);
         }
+      }
+      
+ 
       });
     }
   }
@@ -128,3 +133,4 @@ export class AppComponent implements OnInit{
     this.isLoggedIn = false;
   }
 }
+

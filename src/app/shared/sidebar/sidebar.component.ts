@@ -3,7 +3,7 @@ import { Component, inject, OnInit } from '@angular/core';
 import { ActivatedRoute, RouterModule } from '@angular/router';
 import { Router, NavigationEnd } from '@angular/router';
 import { AppComponent } from '../../app.component';
-import { Auth, getAuth, onAuthStateChanged } from '@angular/fire/auth';
+import { Auth, getAuth, onAuthStateChanged, User } from '@angular/fire/auth';
 
 /**
  * SidebarComponent is responsible for rendering the sidebar in the application.
@@ -84,7 +84,7 @@ export class SidebarComponent implements OnInit {
    * It listens for authentication state changes and router events.
    */
   ngOnInit() {
-    onAuthStateChanged(this.auth, (user) => {
+    onAuthStateChanged(this.auth, (user: User | null) => {
       this.isLoggedIn = !!user;
     });
 

@@ -2,7 +2,7 @@ import { CommonModule } from '@angular/common';
 import { Component, HostListener, inject } from '@angular/core';
 import { Router, RouterLink } from '@angular/router';
 import { AppComponent } from '../../app.component';
-import { Auth, getAuth, onAuthStateChanged } from '@angular/fire/auth';
+import { Auth, getAuth, onAuthStateChanged, User } from '@angular/fire/auth';
 
 /**
  * Component for the header of the application.
@@ -52,7 +52,7 @@ export class HeaderComponent {
    * It updates the login state based on whether the user is authenticated.
    */
   ngOnInit() {
-    onAuthStateChanged(this.auth, (user) => {
+    onAuthStateChanged(this.auth, (user: User | null) => {
       this.isLoggedIn = !!user; 
     });
   }
@@ -79,7 +79,7 @@ export class HeaderComponent {
    */
   private fetchUserInitials() {
     const auth = getAuth();
-    onAuthStateChanged(auth, (user) => {
+    onAuthStateChanged(auth, (user: User | null) => {
       if (user) {
         this.isLoggedIn = true; 
         const displayName = user.displayName || ''; 

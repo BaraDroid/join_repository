@@ -88,6 +88,7 @@ export class FirebaseService {
   unsubscribeOrderedList: Unsubscribe = () => {};
 
   constructor() {
+    //the first two ones musst be commented after first initializing
     this.initializeContacts();
     this.initializeTasks();
     // Initialize Firestore listeners
